@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           kbinFamiliarity
 @namespace      github.com/Tanza3D/kbin-familiarity-theme
-@version        1.0.1
+@version        1.0.2
 @description    Custom theme for kbin to replicate the classic Old Reddit style.
 @author         Tanza3D
 @updateURL      https://raw.githubusercontent.com/Tanza3D/kbin-familiarity-theme/main/kbin-familiarity.user.css
@@ -260,7 +260,7 @@
         margin-bottom: -4px;
     }
     
-    .dropdown__menu {
+    .row.actions .dropdown__menu {
         margin-top: 30px;
     }
     
