@@ -1,0 +1,250 @@
+.theme--dark {
+    --kbin-body-text-align: left;
+    --kbin-body-bg: #262626;
+    --kbin-bg: #262626;
+    --kbin-input-bg: #262626;
+    --kbin-button-secondary-bg: #262626;
+    --kbin-vote-bg: #262626;
+    --kbin-success-color: #0e6;
+    font: normal x-small verdana, arial, helvetica, sans-serif;
+}
+
+body:not(.theme--dark):before {
+    height: 30px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 0px;
+    background-color: #ee6644;
+    color: #111a;
+    font-weight: 400;
+    content: "This theme only works on Dark Mode. Some features still may work on other themes.";
+}
+
+.entry.section menu > li {
+    padding: 0px;
+}
+
+.entry header {
+    margin: 0px;
+}
+
+.entry.section.subject .vote {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.entry.section.subject .vote {
+    width: 110px;
+}
+
+.entry.section.subject .vote button {
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0px;
+    background-color: transparent;
+}
+
+.entry.section.subject {
+    padding: 0px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.entry.section.subject figure {
+    margin: 0px;
+    float: left;
+}
+
+.entry.section.subject .meta a {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.entry.section.subject figure img {
+    max-height: 60px;
+    max-width: auto;
+    width: auto;
+    position: absolute;
+    left: 50px;
+}
+
+.entry.section.subject .vote {
+    padding-left: 0px !important;
+    padding-right: 90px;
+}
+
+.kbin-container {
+    max-width: calc(100vw - 30px);
+}
+
+.entry.section.subject menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme--dark .entry.section.subject menu li:first-child {
+    background-color: #444;
+    color: #ddd !important;
+
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.theme--dark .entry.section.subject menu li:first-child * {
+    color: #ddd;
+}
+
+.theme--dark .entry.section.subject:hover:before {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    right: 0px;
+    z-index: -1;
+    background-color: #333;
+    content: "";
+    height: 100%;
+}
+
+.entry.section.subject figure img {
+    height: auto !important;
+    max-height: 999px;
+    width: 60px !important;
+}
+
+.theme--dark .meta-link .fa-regular,
+.theme--dark .show-preview .fa-solid {
+    color: #ddd !important;
+}
+
+#sidebar section {
+    background-color: transparent;
+    border: 0px solid transparent;
+}
+
+.entry footer menu a,
+.entry footer menu button {
+    color: #828282;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+.entry--single {
+    padding-top: 20px !important;
+}
+
+.preview img {
+    margin-left: 100px;
+    margin-bottom: 30px;
+    max-height: 70vh;
+}
+
+.posts.section,
+.entries.section {
+    display: none;
+}
+
+.user-inline {
+    color: #369 !important
+}
+
+
+.magazine-inline {
+    color: #6a98af !important;
+}
+
+.meta {
+    color: #828282;
+    font-size: x-small;
+}
+
+.theme--dark .entry header h2 a {
+    color: #dedede !important;
+    font-size: medium;
+}
+
+.theme--dark .entry footer menu {
+    opacity: 1;
+    color: #828282 !important;
+}
+
+header#header {
+    border-bottom: 1px solid #5F99CF;
+    background-color: #696969;
+}
+
+.comments-tree blockquote {
+    margin-bottom: 2px;
+    padding: 8px 10px;
+    padding-left: 35px;
+}
+
+.theme--dark .comments-tree blockquote {
+    background-color: #161616 !important;
+}
+
+.comments-tree blockquote figure {
+    display: none;
+}
+
+.comments-tree blockquote aside {
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+    top: 10px;
+    display: flex;
+    left: 10px;
+    grid-area: none;
+}
+
+.comments-tree blockquote aside button {
+    width: 40px !important;
+    gap: 4px;
+    display: flex;
+    background-color: transparent;
+}
+
+.comments-tree .section menu > li {
+    margin: 0px;
+    padding: 0px;
+    margin-top: -8px;
+    padding-bottom: 4px;
+    font-size: 10px !important;
+}
+
+.comments-tree .section menu > li * {
+    font-size: 10px !important;
+    font-family: normal x-small verdana, arial, helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.comments-tree menu form {
+    transform: translateY(1px);
+}
+
+.comment header {
+    margin-bottom: 0px;
+}
+
+.theme--dark .comments-tree .content {
+    color: #ddd;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.comments-tree header * {
+    font-size: 10px;
+}
+
+.comments-tree header {
+    margin-bottom: -4px;
+}
