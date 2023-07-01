@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           kbinFamiliarity
 @namespace      github.com/Tanza3D/kbin-familiarity-theme
-@version        1.0.0
+@version        1.0.1
 @description    Custom theme for kbin to replicate the classic Old Reddit style.
 @author         Tanza3D
 @updateURL      https://raw.githubusercontent.com/Tanza3D/kbin-familiarity-theme/main/kbin-familiarity.user.css
@@ -262,6 +262,13 @@
     
     .dropdown__menu {
         margin-top: 30px;
+    }
+    
+    .content.formatted {
+        font-size: 12px;
+    }
+    .content.formatted a {
+        font-size: inherit;
     }
 
     /* Kbin Usabiltiy Pack - https://greasyfork.org/en/scripts/469597-kbin-usability-pack */
