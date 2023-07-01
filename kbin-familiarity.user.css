@@ -42,15 +42,20 @@
     .entry.section.subject .vote {
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         flex-direction: row;
         gap: 8px;
     }
 
     .entry.section.subject .vote {
-        width: 110px;
+        width: 100px !important;
+        padding-left: 115px;
+        box-sizing: border-box;
+        transform: translateX(-95px)
     }
 
     .entry.section.subject .vote button {
+        
         width: auto;
         display: flex;
         align-items: center;
@@ -66,7 +71,7 @@
     }
 
     .entry.section.subject figure {
-        margin: 0px;
+        margin: 0px !important;
         float: left;
     }
 
@@ -83,10 +88,6 @@
         left: 50px;
     }
 
-    .entry.section.subject .vote {
-        padding-left: 0px !important;
-        padding-right: 90px;
-    }
 
     .kbin-container {
         max-width: calc(100vw - 30px);
@@ -125,6 +126,7 @@
         height: auto !important;
         max-height: 999px;
         width: 60px !important;
+        top: 2px;
     }
 
     .theme--dark .meta-link .fa-regular,
@@ -259,4 +261,20 @@
     }
 
     /* Kbin Usabiltiy Pack - https://greasyfork.org/en/scripts/469597-kbin-usability-pack */
+    
+    .article-preview-content {
+        font-size: 12px;
+        padding-left: 120px !important;
+    }
+    
+    #content article.entry button.show-preview, #content article.entry button.preview-button{
+        background-color: transparent;
+        border: 0px solid transparent;
+        padding: 2px;
+        margin: 0px;
+    }
+    
+    .preview-outer .preview-inner .media-preview-content.loaded {
+        animation: none !important;
+    }
 }
