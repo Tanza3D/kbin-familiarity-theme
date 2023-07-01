@@ -259,6 +259,10 @@
     .comments-tree header {
         margin-bottom: -4px;
     }
+    
+    .dropdown__menu {
+        margin-top: 30px;
+    }
 
     /* Kbin Usabiltiy Pack - https://greasyfork.org/en/scripts/469597-kbin-usability-pack */
     
