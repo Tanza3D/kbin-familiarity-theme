@@ -49,9 +49,7 @@
 
     .entry.section.subject .vote {
         width: 100px !important;
-        padding-left: 115px;
         box-sizing: border-box;
-        transform: translateX(-95px)
     }
 
     .entry.section.subject .vote button {
