@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           kbinFamiliarity
 @namespace      github.com/Tanza3D/kbin-familiarity-theme
-@version        1.1.0
+@version        1.1.1
 @description    Custom theme for kbin to replicate the classic Old Reddit style.
 @author         Tanza3D
 @updateURL      https://raw.githubusercontent.com/Tanza3D/kbin-familiarity-theme/main/kbin-familiarity.user.css
@@ -38,9 +38,11 @@
     .entry header {
         margin: 0px;
     }
+
     .entry.section.subject {
         margin-bottom: 0px;
     }
+
     .entry.section.subject .vote {
         display: flex;
         align-items: center;
@@ -57,7 +59,7 @@
     }
 
     .entry.section.subject .vote button {
-        
+
         width: auto;
         display: flex;
         align-items: center;
@@ -76,8 +78,14 @@
         margin: 0px !important;
         float: left;
     }
-    
-    .entry .no-image-placeholder, .entry .short-desc, .entry .vote, .entry figure, .entry footer, .entry header, .entry__meta {
+
+    .entry .no-image-placeholder,
+    .entry .short-desc,
+    .entry .vote,
+    .entry figure,
+    .entry footer,
+    .entry header,
+    .entry__meta {
         margin-left: 0px;
     }
 
@@ -123,7 +131,7 @@
     .theme--dark .entry.section.subject:hover:before {
         position: absolute;
         top: 0;
-        left: 120px;
+        left: 140px;
         right: 0px;
         z-index: -1;
         background-color: #333;
@@ -132,21 +140,23 @@
     }
 
     .image-filler {
-display: none;
-}
+        display: none;
+    }
+
     .entry.section.subject figure {
         position: absolute;
         left: 00px;
         right: 0px;
         grid-area: none;
     }
+
     .entry.section.subject figure img {
         position: absolute;
         left: 0px;
         width: 70px;
         margin-left: 60px;
     }
-    
+
 
     .theme--dark .meta-link .fa-regular,
     .theme--dark .show-preview .fa-solid {
@@ -278,32 +288,39 @@ display: none;
     .comments-tree header {
         margin-bottom: -4px;
     }
-    
+
     .row.actions .dropdown__menu {
         margin-top: 30px;
     }
-    
+
     .content.formatted {
         font-size: 12px;
     }
+
     .content.formatted a {
         font-size: inherit;
     }
 
     /* Kbin Usabiltiy Pack - https://greasyfork.org/en/scripts/469597-kbin-usability-pack */
-    
+    .entry__body,
     .article-preview-content {
         font-size: 12px;
-        padding-left: 120px !important;
+        padding-left: 145px !important;
     }
-    
-    #content article.entry button.show-preview, #content article.entry button.preview-button{
+
+    .preview-outer .preview-inner .article-preview-content {
+        padding-top: 0.5em;
+        padding-bottom: 0em;
+    }
+
+    #content article.entry button.show-preview,
+    #content article.entry button.preview-button {
         background-color: transparent;
         border: 0px solid transparent;
         padding: 2px;
         margin: 0px;
     }
-    
+
     .preview-outer .preview-inner .media-preview-content.loaded {
         animation: none !important;
     }
