@@ -155,14 +155,10 @@
     }
 
     .entry.section.subject figure img {
-        max-height: 60px;
-        max-width: auto;
-        width: auto;
         position: absolute;
         left: 0px;
-        object-fit: cover;
-        max-height: 60px;
-        margin-top: 8px;
+        width: 70px;
+        margin-left: 60px;
     }
 
 
