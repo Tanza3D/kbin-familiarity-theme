@@ -110,6 +110,10 @@
         max-width: calc(100vw - 30px);
     }
 
+    #middle .kbin-container {
+        grid-template-columns: 6fr 1fr;
+    }
+
     .entry.section.subject menu {
         display: flex;
         align-items: center;
