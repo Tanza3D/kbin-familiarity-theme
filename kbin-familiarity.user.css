@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           kbinFamiliarity
 @namespace      github.com/Tanza3D/kbin-familiarity-theme
-@version        1.0.2
+@version        1.1.0
 @description    Custom theme for kbin to replicate the classic Old Reddit style.
 @author         Tanza3D
 @updateURL      https://raw.githubusercontent.com/Tanza3D/kbin-familiarity-theme/main/kbin-familiarity.user.css
@@ -38,7 +38,9 @@
     .entry header {
         margin: 0px;
     }
-
+    .entry.section.subject {
+        margin-bottom: 0px;
+    }
     .entry.section.subject .vote {
         display: flex;
         align-items: center;
@@ -49,9 +51,9 @@
 
     .entry.section.subject .vote {
         width: 100px !important;
-        padding-left: 115px;
+        padding-left: 145px;
         box-sizing: border-box;
-        transform: translateX(-95px)
+        transform: translateX(-120px)
     }
 
     .entry.section.subject .vote button {
@@ -74,6 +76,10 @@
         margin: 0px !important;
         float: left;
     }
+    
+    .entry .no-image-placeholder, .entry .short-desc, .entry .vote, .entry figure, .entry footer, .entry header, .entry__meta {
+        margin-left: 0px;
+    }
 
     .entry.section.subject .meta a {
         margin: 0px !important;
@@ -85,7 +91,10 @@
         max-width: auto;
         width: auto;
         position: absolute;
-        left: 50px;
+        left: 0px;
+        object-fit: cover;
+        max-height: 60px;
+        margin-top: 8px;
     }
 
 
@@ -122,12 +131,22 @@
         height: 100%;
     }
 
-    .entry.section.subject figure img {
-        height: auto !important;
-        max-height: 999px;
-        width: 60px !important;
-        top: 2px;
+    .image-filler {
+display: none;
+}
+    .entry.section.subject figure {
+        position: absolute;
+        left: 00px;
+        right: 0px;
+        grid-area: none;
     }
+    .entry.section.subject figure img {
+        position: absolute;
+        left: 0px;
+        width: 70px;
+        margin-left: 60px;
+    }
+    
 
     .theme--dark .meta-link .fa-regular,
     .theme--dark .show-preview .fa-solid {
